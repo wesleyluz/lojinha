@@ -1,0 +1,31 @@
+<header class="main-header">
+    <h1 class="main-header__title" (click)="mainPage()">
+        <span class="main-header__title--blue">Lojinha</span><span class="main-header__title--orange">Virtual</span>
+    </h1>
+    <div class="container-menu">
+        <nav class="main-header__menu">
+            <ul>
+                <li>
+                    <a routerLink="/produtos">Produtos</a>
+                </li>
+                <li>
+                    <a routerLink="/carrinho">
+                        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                        Carrinho
+                        <span class="badge-carrinho">{{carrinhoService.obterCarrinho().length}}</span>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/contato">Contato</a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/wesley-araujo-costa-luz-19095b127/"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/wesleyLuz"><i class="fa-brands fa-github"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <app-barra-pesquisa></app-barra-pesquisa>
+    </div>
+</header>
